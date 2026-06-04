@@ -55,14 +55,11 @@ const HomePage = () => {
             />
           </div>
           <div className="col-md-8 text-color">
-            <h1 className="ms-5">Experience Effortless Financial Management</h1>
+           <h1 className="ms-5">Welcome to TemsFidelity Bank</h1>
             <p className="ms-5">
-              Discover a new level of financial control through our intuitive
-              Online Banking System. Seamlessly manage transactions, deposits,
-              and withdrawals with a user-friendly interface designed to
-              simplify your banking experience. Whether you're transferring
-              funds, depositing savings, or making withdrawals, our platform
-              ensures security and convenience at every step.
+              TemsFidelity Bank gives you total control of your finances.
+              Seamlessly manage transactions, deposits, and withdrawals
+              with a platform built for speed, security and convenience.    
             </p>
             <p className="ms-5">
               Empower yourself with effortless financial management and enjoy
