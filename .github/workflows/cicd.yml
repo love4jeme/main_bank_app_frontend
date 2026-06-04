@@ -17,12 +17,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
       with:
-        repository: digitalwitchdemo/main_bank_app_frontend
+        repository: love4jeme/main_bank_app_frontend
         ref: main
 
 
     - name: Log in to awscli
-      uses: aws-actions/configure-aws-credentials@v3
+      uses: aws-actions/configure-aws-credentials@v4
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -62,11 +62,11 @@ jobs:
           GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
           GIT_PASSWORD: ${{ secrets.GIT_PASSWORD }}
       run: |
-         git clone https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/digitalwitchdemo/kubernetes-manifest.git
+         git clone https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/love4jeme/kubernetes-manifest.git
          
-         cd kubernetes-manifest
-         git config --global user.email "pod15engineers@gmail.com"
-         git config --global user.name "pod15engineers"
+         cd kubernetes-manifestS
+        git config --global user.email "love4jeme@gmail.com"
+         git config --global user.name "love4jeme"
 
          sed -i "s+${{ vars.ECR_REPO }}/bank-frontend:.*+${{ vars.ECR_REPO }}/bank-frontend:${{ github.run_number }}+g" ./bank-project/frontend.yaml
 
