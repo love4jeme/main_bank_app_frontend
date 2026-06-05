@@ -16,9 +16,7 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
-      with:
-        repository: love4jeme/main_bank_app_frontend
-        ref: main
+      
 
 
     - name: Log in to awscli
